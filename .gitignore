@@ -1,0 +1,39 @@
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Ignore data files
+*.csv
+*.parquet
+*.h5
+*.pkl
+
+# Logs and debug files
+logs/
+*.log
+*.out
+
+# IDE settings
+.idea/
+.vscode/
+
+# Environment files
+.env
+.DS_Store
+
+# Compiled code
+build/
+dist/
+*.egg-info/
+

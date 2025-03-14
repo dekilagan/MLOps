@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/448361415044652229/49723d2604cf443cae8a356eed057d07/artifacts
+end_time: 1741893839773
+entry_point_name: ''
+experiment_id: '448361415044652229'
+lifecycle_stage: active
+run_id: 49723d2604cf443cae8a356eed057d07
+run_name: amazing-cod-932
+run_uuid: 49723d2604cf443cae8a356eed057d07
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741893833049
+status: 3
+tags: []
+user_id: deric

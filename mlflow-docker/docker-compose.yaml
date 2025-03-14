@@ -1,0 +1,104 @@
+
+services:
+  db:
+    image: postgres:${PG_VERSION}
+    container_name: mlflow_postgres
+    restart: always
+    ports:
+      - "${PG_PORT}:${PG_PORT}"
+    networks:
+      - backend-network
+    environment:
+      POSTGRES_USER: ${PG_USER}
+      POSTGRES_PASSWORD: ${PG_PASSWORD}
+      POSTGRES_DB: ${PG_DATABASE}
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data/
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${PG_USER} -p ${PG_PORT}"]
+      interval: 5s
+      timeout: 5s
+      retries: 3
+
+  s3:
+    image: minio/minio:${MINIO_VERSION}
+    container_name: mlflow_minio
+    restart: always
+    volumes:
+      - ./minio_data:/data
+    ports:
+      - "${MINIO_PORT}:9000"
+      - "${MINIO_CONSOLE_PORT}:9001"
+    networks:
+      - frontend-network
+      - backend-network
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+    command: server /data --console-address :9001
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+  tracking_server:
+    build:
+      context: ./mlflow
+      dockerfile: DockerFile
+    image: mlflow_server
+    container_name: mlflow_server
+    restart: always
+    depends_on:
+      - db
+      - s3
+    ports:
+      - "${MLFLOW_PORT}:5000"
+    networks:
+      - frontend-network
+      - backend-network
+    environment:
+      - AWS_ACCESS_KEY_ID=${MINIO_ACCESS_KEY}
+      - AWS_SECRET_ACCESS_KEY=${MINIO_SECRET_ACCESS_KEY}
+      - MLFLOW_S3_ENDPOINT_URL=http://s3:9000
+      - MLFLOW_S3_IGNORE_TLS=true
+      - MLFLOW_BUCKET_NAME=${MLFLOW_BUCKET_NAME}
+      - PG_USER=${PG_USER}
+      - PG_PASSWORD=${PG_PASSWORD}
+      - PG_PORT=${PG_PORT}
+      - PG_DATABASE=${PG_DATABASE}
+    command: >
+      mlflow server
+      --backend-store-uri postgresql://${PG_USER}:${PG_PASSWORD}@db:${PG_PORT}/${PG_DATABASE}
+      --host 0.0.0.0
+      --serve-artifacts
+      --artifacts-destination s3://${MLFLOW_BUCKET_NAME}
+    volumes:
+      - .:/app
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  fastapi:
+    build:
+      context: ./fastapi_app
+      dockerfile: DockerFile
+    container_name: fastapi_app
+    restart: always
+    depends_on:
+      - tracking_server
+    ports:
+      - "8000:8000"
+    networks:
+      - frontend-network
+      - backend-network
+    environment:
+      MLFLOW_TRACKING_URI: http://tracking_server:5000
+
+networks:
+  frontend-network:
+    driver: bridge
+  backend-network:
+    driver: bridge

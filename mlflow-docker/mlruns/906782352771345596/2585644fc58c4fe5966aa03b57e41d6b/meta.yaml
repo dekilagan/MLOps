@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/906782352771345596/2585644fc58c4fe5966aa03b57e41d6b/artifacts
+end_time: 1741920980153
+entry_point_name: ''
+experiment_id: '906782352771345596'
+lifecycle_stage: active
+run_id: 2585644fc58c4fe5966aa03b57e41d6b
+run_name: crawling-dog-918
+run_uuid: 2585644fc58c4fe5966aa03b57e41d6b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741920974663
+status: 3
+tags: []
+user_id: deric

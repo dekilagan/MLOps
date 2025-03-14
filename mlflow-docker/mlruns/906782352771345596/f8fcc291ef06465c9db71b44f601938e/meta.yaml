@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/906782352771345596/f8fcc291ef06465c9db71b44f601938e/artifacts
+end_time: 1741919432893
+entry_point_name: ''
+experiment_id: '906782352771345596'
+lifecycle_stage: active
+run_id: f8fcc291ef06465c9db71b44f601938e
+run_name: thoughtful-steed-127
+run_uuid: f8fcc291ef06465c9db71b44f601938e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741919427743
+status: 3
+tags: []
+user_id: deric

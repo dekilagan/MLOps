@@ -1,0 +1,39 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.1
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 2.20.4
+model_size_bytes: 1084359
+model_uuid: dff21eb2895d4e20be8add49e18e5df2
+run_id: def2100944284c72af046c374a77c9cd
+signature:
+  inputs: '[{"type": "double", "name": "meanfreq", "required": true}, {"type": "double",
+    "name": "sd", "required": true}, {"type": "double", "name": "median", "required":
+    true}, {"type": "double", "name": "Q25", "required": true}, {"type": "double",
+    "name": "Q75", "required": true}, {"type": "double", "name": "IQR", "required":
+    true}, {"type": "double", "name": "skew", "required": true}, {"type": "double",
+    "name": "kurt", "required": true}, {"type": "double", "name": "sp.ent", "required":
+    true}, {"type": "double", "name": "sfm", "required": true}, {"type": "double",
+    "name": "mode", "required": true}, {"type": "double", "name": "centroid", "required":
+    true}, {"type": "double", "name": "meanfun", "required": true}, {"type": "double",
+    "name": "minfun", "required": true}, {"type": "double", "name": "maxfun", "required":
+    true}, {"type": "double", "name": "meandom", "required": true}, {"type": "double",
+    "name": "mindom", "required": true}, {"type": "double", "name": "maxdom", "required":
+    true}, {"type": "double", "name": "dfrange", "required": true}, {"type": "double",
+    "name": "modindx", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-03-13 19:42:10.684605'

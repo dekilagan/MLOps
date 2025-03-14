@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/84c26a7349a34fa183304d3705c099f7/artifacts
+end_time: 1741892166859
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 84c26a7349a34fa183304d3705c099f7
+run_name: sincere-lynx-221
+run_uuid: 84c26a7349a34fa183304d3705c099f7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741892152658
+status: 3
+tags: []
+user_id: deric

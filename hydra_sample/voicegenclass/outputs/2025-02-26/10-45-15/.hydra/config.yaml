@@ -1,0 +1,13 @@
+dataset:
+  base_path: data
+  train_csv: voice.csv
+  label_column: label
+  new_audio_file: 1001_DFA_ANG_XX.wav
+features:
+  n_mfcc: 18
+model:
+  test_size: 0.25
+  random_state: 42
+  kernel: rbf
+  C: 1.1
+  gamma: scale

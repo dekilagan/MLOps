@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/448361415044652229/bf519402c1084895ad51d8e83276f9fb/artifacts
+end_time: 1741895147843
+entry_point_name: ''
+experiment_id: '448361415044652229'
+lifecycle_stage: active
+run_id: bf519402c1084895ad51d8e83276f9fb
+run_name: merciful-ram-451
+run_uuid: bf519402c1084895ad51d8e83276f9fb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741895142479
+status: 3
+tags: []
+user_id: deric

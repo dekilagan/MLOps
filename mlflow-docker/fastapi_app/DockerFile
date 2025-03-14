@@ -1,0 +1,13 @@
+# fastapi_app/Dockerfile
+
+FROM python:3.9-slim
+
+RUN pip install --no-cache-dir fastapi uvicorn mlflow scikit-learn pandas numpy
+
+# Copy your api.py into the container
+COPY api.py /fastapi_app/api.py
+WORKDIR /fastapi_app
+
+EXPOSE 8000
+CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000"]
+

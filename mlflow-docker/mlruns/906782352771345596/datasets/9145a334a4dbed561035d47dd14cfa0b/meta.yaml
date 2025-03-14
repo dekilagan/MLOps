@@ -1,0 +1,20 @@
+digest: e78961b7
+name: dataset
+profile: '{"num_rows": 634, "num_elements": 12680}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "meanfreq", "required": true},
+  {"type": "double", "name": "sd", "required": true}, {"type": "double", "name": "median",
+  "required": true}, {"type": "double", "name": "Q25", "required": true}, {"type":
+  "double", "name": "Q75", "required": true}, {"type": "double", "name": "IQR", "required":
+  true}, {"type": "double", "name": "skew", "required": true}, {"type": "double",
+  "name": "kurt", "required": true}, {"type": "double", "name": "sp.ent", "required":
+  true}, {"type": "double", "name": "sfm", "required": true}, {"type": "double", "name":
+  "mode", "required": true}, {"type": "double", "name": "centroid", "required": true},
+  {"type": "double", "name": "meanfun", "required": true}, {"type": "double", "name":
+  "minfun", "required": true}, {"type": "double", "name": "maxfun", "required": true},
+  {"type": "double", "name": "meandom", "required": true}, {"type": "double", "name":
+  "mindom", "required": true}, {"type": "double", "name": "maxdom", "required": true},
+  {"type": "double", "name": "dfrange", "required": true}, {"type": "double", "name":
+  "modindx", "required": true}]}'
+source: '{"tags": {"mlflow.user": "deric", "mlflow.source.name": "C:\\Users\\deric\\AppData\\Roaming\\Python\\Python313\\site-packages\\ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/448361415044652229/4b2fb84e83224ab9897570e72b8e4afb/artifacts
+end_time: 1741918738258
+entry_point_name: ''
+experiment_id: '448361415044652229'
+lifecycle_stage: active
+run_id: 4b2fb84e83224ab9897570e72b8e4afb
+run_name: spiffy-crow-760
+run_uuid: 4b2fb84e83224ab9897570e72b8e4afb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741918731559
+status: 3
+tags: []
+user_id: deric

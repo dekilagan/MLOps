@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/906782352771345596/c5c8001dcda64764b61acb04ea1e9d3b/artifacts
+end_time: 1741919838502
+entry_point_name: ''
+experiment_id: '906782352771345596'
+lifecycle_stage: active
+run_id: c5c8001dcda64764b61acb04ea1e9d3b
+run_name: carefree-duck-897
+run_uuid: c5c8001dcda64764b61acb04ea1e9d3b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741919833679
+status: 3
+tags: []
+user_id: deric

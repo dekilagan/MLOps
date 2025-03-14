@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/448361415044652229/ba8fcf8bd9a7416e9ac73cf89a0b69bc/artifacts
+end_time: 1741894245283
+entry_point_name: ''
+experiment_id: '448361415044652229'
+lifecycle_stage: active
+run_id: ba8fcf8bd9a7416e9ac73cf89a0b69bc
+run_name: smiling-crab-953
+run_uuid: ba8fcf8bd9a7416e9ac73cf89a0b69bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741894240593
+status: 3
+tags: []
+user_id: deric

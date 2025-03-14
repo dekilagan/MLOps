@@ -1,0 +1,8 @@
+# mlflow/Dockerfile
+
+FROM python:3.9-slim
+
+# Install MLflow and necessary dependencies
+RUN pip install --no-cache-dir mlflow psycopg2-binary boto3
+
+CMD ["mlflow", "--help"]

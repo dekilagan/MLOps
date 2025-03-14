@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/448361415044652229/def2100944284c72af046c374a77c9cd/artifacts
+end_time: 1741894934744
+entry_point_name: ''
+experiment_id: '448361415044652229'
+lifecycle_stage: active
+run_id: def2100944284c72af046c374a77c9cd
+run_name: skittish-ant-29
+run_uuid: def2100944284c72af046c374a77c9cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741894929511
+status: 3
+tags: []
+user_id: deric

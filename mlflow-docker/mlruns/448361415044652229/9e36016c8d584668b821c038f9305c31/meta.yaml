@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/448361415044652229/9e36016c8d584668b821c038f9305c31/artifacts
+end_time: 1741918421775
+entry_point_name: ''
+experiment_id: '448361415044652229'
+lifecycle_stage: active
+run_id: 9e36016c8d584668b821c038f9305c31
+run_name: capable-ape-476
+run_uuid: 9e36016c8d584668b821c038f9305c31
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741918393494
+status: 3
+tags: []
+user_id: deric

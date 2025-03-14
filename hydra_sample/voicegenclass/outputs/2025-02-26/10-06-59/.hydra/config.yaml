@@ -1,0 +1,13 @@
+dataset:
+  base_path: data
+  train_csv: voice.csv
+  label_column: label
+  new_audio_file: new_audio.wav
+features:
+  n_mfcc: 40
+model:
+  test_size: 0.2
+  random_state: 42
+  kernel: rbf
+  C: 1.0
+  gamma: scale

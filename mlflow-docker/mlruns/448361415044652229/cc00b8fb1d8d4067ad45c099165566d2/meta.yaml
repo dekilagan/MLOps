@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/448361415044652229/cc00b8fb1d8d4067ad45c099165566d2/artifacts
+end_time: 1741918426519
+entry_point_name: ''
+experiment_id: '448361415044652229'
+lifecycle_stage: active
+run_id: cc00b8fb1d8d4067ad45c099165566d2
+run_name: voice_gender_run
+run_uuid: cc00b8fb1d8d4067ad45c099165566d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741918421963
+status: 3
+tags: []
+user_id: deric

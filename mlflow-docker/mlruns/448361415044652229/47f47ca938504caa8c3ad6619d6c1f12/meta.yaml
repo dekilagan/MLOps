@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/448361415044652229/47f47ca938504caa8c3ad6619d6c1f12/artifacts
+end_time: 1741894714256
+entry_point_name: ''
+experiment_id: '448361415044652229'
+lifecycle_stage: active
+run_id: 47f47ca938504caa8c3ad6619d6c1f12
+run_name: secretive-snail-765
+run_uuid: 47f47ca938504caa8c3ad6619d6c1f12
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741894709061
+status: 3
+tags: []
+user_id: deric

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/906782352771345596/1c20e1d3ca5d49268ef3f9a1f0b5d40d/artifacts
+end_time: 1741919476420
+entry_point_name: ''
+experiment_id: '906782352771345596'
+lifecycle_stage: active
+run_id: 1c20e1d3ca5d49268ef3f9a1f0b5d40d
+run_name: simple_run
+run_uuid: 1c20e1d3ca5d49268ef3f9a1f0b5d40d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741919472151
+status: 3
+tags: []
+user_id: deric

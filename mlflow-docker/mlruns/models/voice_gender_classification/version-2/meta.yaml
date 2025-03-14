@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1741893881399
+current_stage: None
+description: ''
+last_updated_timestamp: 1741893881399
+name: voice_gender_classification
+run_id: e351b6e8fabf41e887dc19a85111cbe3
+run_link: ''
+source: mlflow-artifacts:/448361415044652229/e351b6e8fabf41e887dc19a85111cbe3/artifacts/model
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/448361415044652229/e351b6e8fabf41e887dc19a85111cbe3/artifacts/model
+user_id: null
+version: 2
